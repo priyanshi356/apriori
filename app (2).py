@@ -8,11 +8,11 @@ from mlxtend.frequent_patterns import apriori, association_rules
 st.set_option('deprecation.showfileUploaderEncoding', False)
 def find_associatio_rule(support):
   # Load the pickled model
-  model = pickle.load(open('/content/drive/My Drive/apriori.pkl','rb'))     
+  model = pickle.load(open('apriori.pkl','rb'))     
   if uploaded_file is not None:
     dataset= pd.read_csv(uploaded_file)
   else:
-    dataset= pd.read_csv('/content/drive/My Drive/Aprori3 dataset.csv')
+    dataset= pd.read_csv('Aprori3 dataset.csv')
 
   #Create list 
   transactions = []
